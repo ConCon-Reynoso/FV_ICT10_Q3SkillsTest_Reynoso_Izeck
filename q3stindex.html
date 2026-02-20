@@ -1,0 +1,29 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://pyscript.net/releases/2024.1.1/core.css" />
+    <script type="module" src="https://pyscript.net/releases/2024.1.1/core.js"></script>
+    <script defer src="https://pyscript.net/releases/2024.2.1/pyscript.js"></script>
+    <link rel="stylesheet" href="styles.css">
+    <title>Account Creation</title>    
+</head>
+<body>
+    <form>
+        <h2>Create Account</h2>
+
+        <div>
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="Username" required><br><br>
+        </div>
+
+        <div>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="Password" required><br><br>
+        </div>
+
+        <button type="submit" py-click="output">Sign up</button>
+        <div id="output"></div>
+    </form>
+    <script type="py" src="q3stmain.py"></script>
+</body>
+</html>
